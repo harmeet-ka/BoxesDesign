@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="bogo-line">
+        <span>YAY, It's BOGO</span>
+</div>
+  
+    <div class="box" id="box1" onclick="toggleBox(event, 'box1')">
+      <div class="box-content">
+        <div class="box-header">
+          <div class="left">
+            <input type="radio" name="box" id="radio1" class="radio-btn">
+            <h4>1 <span class="units">Unit</span></h4>
+            <p class="offer">10% Off</p>
+          </div>
+          <div class="right">
+            <p>$10.00 USD</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-options" id="options1">
+        <div class="size-color-options">
+          <div class="size-options">
+            <label for="size1">Size:</label>
+            <select id="size1">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label for="color1">Color:</label>
+            <select id="color1">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="box2" onclick="toggleBox(event, 'box2')">
+        <div class="most-popular-tag">Most Popular</div> 
+      <div class="box-content">
+        <div class="box-header">
+          <div class="left">
+            <input type="radio" name="box" id="radio2" class="radio-btn">
+            <h4>2 <span class="units">Unit</span></h4>
+            <p class="offer">20% Off</p>
+          </div>
+          <div class="right">
+            <p>$18.00 USD</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-options" id="options2">
+        <div class="size-color-options">
+          <div class="size-options">
+            <label for="size2">Size:</label>
+            <select id="size2">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label for="color2">Color:</label>
+            <select id="color2">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="box3" onclick="toggleBox(event, 'box3')">
+      <div class="box-content">
+        <div class="box-header">
+          <div class="left">
+            <input type="radio" name="box" id="radio3" class="radio-btn">
+            <h4>3 <span class="units">Unit</span></h4>
+            <p class="offer">30% Off</p>
+          </div>
+          <div class="right">
+            <p>$24.00 USD</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-options" id="options3">
+        <div class="size-color-options">
+          <div class="size-options">
+            <label for="size3">Size:</label>
+            <select id="size3">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label for="color3">Color:</label>
+            <select id="color3">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="summary">
+      <div class="left">
+        <p style="color: #FF6B82;">Free Delivery</p>
+      </div>
+      <div class="right">
+        <p>Total: $18.00 USD</p>
+      </div>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
